@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+.nav-area {
+  background: #4070F4;
+  height: 62px;
+  width: 100%;
+}
+
+.logo {
+  line-height: 60px;
+  padding: 0 40px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+
+.nav-area ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.nav-area ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+
+.nav-area ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 22px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-area ul li a:hover {
+  background: darkorange;
+  transition: .5s;
+}
+
+.btn-area {
+  font-size: 14px;
+  color: white;
+  float: right;
+  line-height: 62px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#box {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .btn-area {
+    display: block;
+  }
+
+  .nav-area ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: darkorange;
+    top: 62px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .nav-area ul li {
+    display: block;
+    margin: 0;
+    line-height: 16px;
+    padding: 25px 0;
+  }
+
+  .nav-area ul li a {
+    font-size: 14px;
+  }
+
+  .nav-area ul li:hover {
+    background: #000;
+  }
+
+  .nav-area ul li a:hover {
+    background: none;
+  }
+
+  #box:checked ~ ul {
+    left: 0;
+  }
+
+  .breadcrumb {
+    font-size: x-small;
+    gap: 5px;
+  }
+
+  .breadcrumb-item,
+  .breadcrumb-separator {
+    margin-bottom: 10px;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.breadcrumb-item {
+  color: grey;
+}
+
+.breadcrumb-item.active {
+  color: #4070F4;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: grey;
+}
+
+.date-picker {
+  margin: 0px 0px;
+}
+
+.date-picker label {
+  display: block;
+  margin-bottom: 10px;
+  
+  font-weight: bold;
+}
+
+.date-picker input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column-left {
+  flex: 1;
+  margin: 20px;
+  margin-left: 50px;
+}
+
+.column-right{
+  flex: 1;
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .table {
+    margin: 20px;
+    margin-right: 50px;
+  }
+}
+
+.guest-section {
+  margin: 20px 0;
+}
+
+.guest-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-right: 200px;
+}
+
+.guest-category label {
+  flex: 1;
+}
+
+.guest-category button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4070F4;
+  color: white;
+  font-size: 20px;
+  line-height: 10px;
+  text-align: center;  
+}
+
+.count{
+  padding: 0 20px;
+}
+
+
+.description {
+  display: block;
+  font-size: small;
+  color: grey;
+}
+
+
+
